@@ -9,22 +9,28 @@
     --secondary-color:white;
 }
 .dark-theme{
-    --primary-color: #c9d6ff;  
+    --primary-color: white;  
     --secondary-color:#0f2027;
 }
 body{
     background-color:var(--primary-color) ;
     color: var(--secondary-color);
-    max-height: 40vh;
 }
 .container{
     display: grid;
-    grid-template-columns:1fr 1fr;
-    font-size: 17px;
+    grid-template-columns:1fr 1fr ;
+
 }
+
 .nav{
-    padding: 10px;
+    padding: 0.625rem;
+    margin-left : 0.625rem;
+    margin-right : 0.625rem;
+    border: 0.0625rem solid var(--secondary-color);
+    border-radius: 2rem;
+
 }
+
 a{  text-decoration: none;
     color: var(--secondary-color);
 }
@@ -35,18 +41,20 @@ a{  text-decoration: none;
    transform: scale(1);
 }
 #Name {
+    padding: 0.625rem;
+    border: none;
     display: flex;
     margin-top: 1rem;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 1.875rem;
     color: var(--secondary-color);
     align-content: flex-start;
 }
 .sContainer{
     display: flex; 
     flex-direction: row; 
+    justify-content: flex-end;
     padding: 2rem;
-    margin-left: 21vw;
 }
 #light {
     margin-top: 0.62rem;
@@ -64,7 +72,6 @@ main{
     font-size: 1.2rem;
 }
 #hi{
-    font-size: 45px;
     margin-bottom: 2rem;
     display: block;
 }
@@ -72,43 +79,88 @@ main{
     margin-top: 2rem;
 }
 .main{
-    display: grid;
-    grid-template-columns: 6vw 17vw auto;
-    margin: auto;
-}
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}  
 .icon{
-    padding: 1rem;
+    flex-direction: row;
+    padding: 2rem;
     margin-top:4rem;
+}
+.nContainer{
+    display: flex;
+}
+.intro{
+    padding:2rem;
 }
 
 #intro{
     display: block;
     font-size: larger;
-    margin: 10px;
-    margin-left: 0px;
+    margin: 0.625rem;
+    margin-left: 0rem;
 }
-.picture{            
+.picture{    
+      width: 9rem;
+      height: auto;        
       border-radius: 50%; 
      border-color: var(--secondary-color);
 } 
-.contact{
-   margin-top: 50px;
-   border:var(--secondary-color) 1px solid;
-   border-radius: 5px;
-   padding:5px;
-   font-size: larger;
-   display: block;
-   color: var(--secondary-color);
-   font-weight: bold;
-   padding: 5px;
-   width: fit-content;
-   background-color: var(--primary-color);
 
-}  
-.contact:hover{
-    background-color: var(--secondary-color);
-    color: black;
+.button {
+    margin: 1.5rem 0rem 0rem 3rem;
+    width: 140px;
+    height: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(224, 218, 218, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    background-color: #0f2027;
+    color: #fff;
+    transform: translateY(-1px);
+    }
+  
+  .button:hover {
+    background-color: #0f2027;
+    color: #fff;
+    transform: translateY(-1px);
+  }
+
+/* mobile view css */
+
+#light,.btmnav{
+    /* display: none; */
 }
+.btmnav{
+    float:right;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    justify-content: space-around;
+    border-radius: 2%;
+    box-shadow: -2px 3px 43px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -2px 3px 43px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 3px 43px 0px rgba(0,0,0,0.75);
+    height: 30vh;
+    width: 30vw;
+    align-items: center;
+    padding: auto;
+}
+.f_row,.s_row{
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+}
+/* mobile view end */
 
 footer{
     margin-top: 15vh;
@@ -123,19 +175,45 @@ footer{
   
 @media(max-width:768px){
 *{
-    font-size: 1rem;
+    /* font-size: 1rem; */
+}
+h1#hi {
+    font-size: 13vw;
+    margin-bottom: 6px;
+}
+#intro{
+    margin: 10px;
+    font-size: 1.5rem;
+    margin-top: 5px;
+    margin-left: 22px;
 }
 .main{
-    display: block;
-    margin: auto;
+    margin-left: -1rem;
+    text-align: left;
 }
-#Name u{
-    font-size: 2rem;
+main{
+    margin-top: 3vh;
 }
-.icon{
-    display: none;
+
+.intro{
+    text-align: left;
+    padding-left: 0%;
 }
+.nContainer{
+    margin: inherit;
+}
+.container{
+    height: max-content;
+    width: max-content;
+}
+.picture{
+    border-radius: 10%;
+    width: 8rem;
+}
+
 .sContainer{
-    display: none;
+ display: none;
 }
+
+   
 }
