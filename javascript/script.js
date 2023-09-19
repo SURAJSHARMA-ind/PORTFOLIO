@@ -6,9 +6,9 @@ light.onclick = function() {
     console.log("u click on me");
     document.body.classList.toggle("dark-theme");
     if(document.body.classList.contains("dark-theme")){
-        light.src = "../resources/icons/light.png";
+        light.src = "./resources/icons/light.png";
     }else{
-        light.src = "../resources/icons/night-mode.png";
+        light.src = "./resources/icons/night-mode.png";
     }
 
 }
