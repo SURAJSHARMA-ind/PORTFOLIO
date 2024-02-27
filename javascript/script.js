@@ -13,5 +13,14 @@ light.onclick = function() {
 
 }
 
-
 // Dark mode code End here....
+
+var  preloader = document.getElementById('preloader');
+
+function myFunction(){
+    setTimeout(() => {
+        
+        if(preloader.style.display = 'none');
+    }, 1500);
+    
+}
