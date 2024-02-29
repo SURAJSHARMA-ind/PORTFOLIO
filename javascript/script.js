@@ -1,6 +1,6 @@
 // Dark mode code start from here....
 
-var light = document.getElementById('light');
+let light = document.getElementById('light');
 
 light.onclick = function() {
     console.log("u click on me");
@@ -12,15 +12,18 @@ light.onclick = function() {
     }
 
 }
-
 // Dark mode code End here....
 
-var  preloader = document.getElementById('preloader');
+let  preloader = document.getElementById('preloader');
 
 function myFunction(){
     setTimeout(() => {
         
         if(preloader.style.display = 'none');
-    }, 1500);
+    }, 1500); 
+}
+// scroll effect on navbar
+function scroller() {
+    console.log("u scroll");
     
 }
