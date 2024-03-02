@@ -312,4 +312,7 @@ footer {
   .indicontainer{
    width: 5rem;
   }
+  .minileft{
+    margin-left: 0%;
+  }
 }
