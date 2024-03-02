@@ -3,7 +3,7 @@
 let light = document.getElementById('light');
 
 light.onclick = function() {
-    console.log("u click on me");
+    // console.log("u click on me");
     document.body.classList.toggle("dark-theme");
     if(document.body.classList.contains("dark-theme")){
         light.src = "./resources/icons/light.png";
@@ -23,7 +23,7 @@ function myFunction(){
     }, 1500); 
 }
 // scroll effect on navbar
-function scroller() {
-    console.log("u scroll");
+// function scroller() {
+//     console.log("u scroll");
     
-}
+// }

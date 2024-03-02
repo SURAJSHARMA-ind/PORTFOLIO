@@ -113,7 +113,7 @@ main {
   border-radius: 50%;
   box-shadow: 0px 10px 15px rgba(253, 254, 254, 0.721);
 }
-.intro {
+.introcontainer {
   padding: 2rem;
 }
 
@@ -132,8 +132,8 @@ main {
 
 .button {
   margin: 1.5rem 0rem 0rem 3rem;
-  width: 140px;
-  height: 45px;
+  width: 8rem;
+  height: 3rem;
   font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 2.5px;
@@ -155,9 +155,6 @@ main {
   transform: translateY(-1px);
 }
 
-.btmnav {
-  display: none;
-}
 
 .f_row,
 .s_row {
@@ -206,12 +203,10 @@ footer {
   overflow: hidden;
   margin: auto;
   width: 80%;
-  padding:3rem;
+  padding:2.5rem;
   height: 10%;
-  box-shadow: 1px 1px 10px 15px rgba(169, 238, 231, 0.67);
+  box-shadow: 1px 1px 10px 15px rgba(35, 84, 79, 0.67);
   transition: all 0.3s ease 0s;
-  /* background-color: var(--primary-color); */
-  /* border: 1px solid var(--secondary-color); */
   border-radius: 1rem;
   display: flex;
   flex-wrap: wrap;
@@ -227,7 +222,6 @@ footer {
   align-items: center;
   font-size: large;
   font-weight: bolder;
-
   flex-wrap: wrap;
   width: 15%;
   height: auto;
@@ -254,16 +248,20 @@ footer {
 @media (max-width: 768px) {
  
   h1#hi {
-    font-size: 2.5rem;
-    margin-bottom: 6px;
-    margin-left: 2rem;
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+    font-size: xx-large;
   }
   #intro {
-    margin: 10px;
-    font-size: 1.6rem;
-    margin-top: 5px;
-    margin-left: 22px;
+    margin: 2rem;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    margin-left: 2rem;
   }
+  h4#intro {
+    margin: 0.4rem 0rem;
+    
+}
   .main {
     margin-left: -1rem;
     text-align: center;
@@ -272,7 +270,7 @@ footer {
     margin-top: 3vh;
   }
 
-  .intro {
+  .introcontainer {
     text-align: left;
     padding-left: 0%;
     display: flex;
@@ -291,21 +289,18 @@ footer {
   }
 
   .sContainer {
-    display: none;
-  }
-  .btmnav {
-    display: flex;
-    background-color: var(--primary-color);
-    justify-content: space-around;
-    border-radius: 2%;
-    box-shadow: -2px 3px 43px 0px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: -2px 3px 43px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: -2px 3px 43px 0px rgba(0, 0, 0, 0.75);
-    height: fit-content;
+    position: fixed;
+    bottom:0;
+    background-color:var(--primary-color);
     width: 100%;
+    justify-content: space-around;
+    box-shadow: 0px 8px 15px rgba(224, 218, 218, 0.475);
+    border-radius: 1rem;
+    height:6rem;
     align-items: center;
-    padding: auto;
+  
   }
+
   .about_img img {
     width: 80vw;
     height: 80vw;
